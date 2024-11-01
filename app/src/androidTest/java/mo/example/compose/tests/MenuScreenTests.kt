@@ -17,7 +17,7 @@ class MenuScreenTests {
     val composeTestRule = createAndroidComposeRule<MainActivity>()
 
     @Test
-    fun useAppContext() {
+    fun full_user_journey() {
         composeTestRule.onNodeWithText("Go to progress screen").performClick()
 
         composeTestRule.onNodeWithContentDescription("Circular progress").assertIsDisplayed()
