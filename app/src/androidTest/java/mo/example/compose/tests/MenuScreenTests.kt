@@ -19,7 +19,10 @@ class MenuScreenTests {
     @Test
     fun useAppContext() {
         composeTestRule.onNodeWithText("Go to progress screen").performClick()
+
         composeTestRule.onNodeWithContentDescription("Circular progress").assertIsDisplayed()
         composeTestRule.onNodeWithText("GO!").assertIsDisplayed()
+
+        composeTestRule.onNodeWithText("Finish").assertIsDisplayed()
     }
 }

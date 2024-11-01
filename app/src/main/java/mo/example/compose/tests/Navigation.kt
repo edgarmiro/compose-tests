@@ -21,8 +21,12 @@ fun Navigation() {
 
         composable("progress") {
             ProgressScreen(
-                onTimerFinish = { navController.navigateUp() }
+                onTimerFinish = { navController.navigate("finish") }
             )
+        }
+
+        composable("finish") {
+            FinishScreen()
         }
     }
 }
