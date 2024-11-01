@@ -30,7 +30,7 @@ fun MenuScreen(
     }
 }
 
-@Preview(showSystemUi = true)
+@Preview(showBackground = true)
 @Composable
 private fun Preview() {
     AppTheme {

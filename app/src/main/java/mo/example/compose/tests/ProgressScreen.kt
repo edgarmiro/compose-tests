@@ -62,7 +62,7 @@ fun ProgressScreen(onTimerFinish: () -> Unit) {
     }
 }
 
-@Preview(showSystemUi = true)
+@Preview(showBackground = true)
 @Composable
 private fun Preview() {
     AppTheme {
