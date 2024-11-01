@@ -1,4 +1,4 @@
-package mo.example.compose.tests
+package mo.example.compose.tests.screens
 
 import androidx.compose.animation.core.LinearEasing
 import androidx.compose.animation.core.animateFloatAsState
@@ -51,7 +51,9 @@ fun ProgressScreen(onTimerFinish: () -> Unit) {
     ) {
         CircularProgressIndicator(
             progress = { progress },
-            modifier = Modifier.size(64.dp).semantics { contentDescription = "Circular progress" },
+            modifier = Modifier
+                .size(64.dp)
+                .semantics { contentDescription = "Circular progress" },
             strokeWidth = 2.dp,
             strokeCap = StrokeCap.Round,
         )

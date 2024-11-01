@@ -1,4 +1,4 @@
-package mo.example.compose.tests
+package mo.example.compose.tests.screens
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
